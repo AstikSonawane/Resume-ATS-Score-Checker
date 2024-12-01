@@ -1,7 +1,7 @@
 import streamlit as st
 import numpy as np
 import pandas as pd
-import matplotlib.pyplot as plt
+#import matplotlib.pyplot as plt
 import warnings
 import re
 import nltk
@@ -129,7 +129,7 @@ def extract_text_from_pdf(uploaded_pdf):
     return text
 
 # File path to the CSV file (automatically accessed)
-csv_file_path = r'C:\Users\HOME\Desktop\New folder\UpdatedResumeDataSet.csv\UpdatedResumeDataSet.csv'
+csv_file_path = r'UpdatedResumeDataSet.csv'
 
 # Load the CSV file for training
 data = pd.read_csv(csv_file_path, encoding='utf-8')
